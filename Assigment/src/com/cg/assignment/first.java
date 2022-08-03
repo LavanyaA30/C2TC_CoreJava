@@ -8,18 +8,18 @@ public class first {
 	   Scanner sc=new Scanner(System.in);
 	   System.out.println("enter the salary");
 	   n=sc.nextInt();
-	   if(n>1000000)
+	   if(n>=1000000)
 	   {
 		   salary=n*30/100;
 	   }
-	   else if(n<1000000)
+	   else if(n>=500000 && n<1000000)
 	   {
 		   salary=n*20/100; 
 	   }
-	   else if(n<500000)
+	   else if(n>1 && n<500000)
 	   {
 		   salary=n*5/100;
 	   }
-	   System.out.println("The Salary " + n + " is : " + salary);
+	   System.out.println("The Tax amount should be " + salary);
 }
 }
